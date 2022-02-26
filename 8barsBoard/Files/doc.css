@@ -20,6 +20,15 @@ div.contents {
 	margin: 20px;
 }
 
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+   div.contents {
+   	padding: 10px;
+      margin: 1px
+   }
+}
+
+
 h1 {
 	color: #000000;
 	background-color: #ffffff;
@@ -42,8 +51,14 @@ h4 {
 }
 
 p {
-/*	margin-left: 3em; */
-	margin-left: 1em;
+	margin-left: 3em;
+}
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+   p {
+	   margin-left: 0em;
+   }
 }
 
 pre {
