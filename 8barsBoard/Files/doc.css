@@ -54,11 +54,19 @@ p {
 	margin-left: 3em;
 }
 
+iframe {
+	margin-left: 3em;
+}
+
 @media screen and (max-width: 480px) {
 	/* 480px以下に適用されるCSS（スマホ用） */
    p {
-	   margin-left: 0em;
+	   margin-left: 1em;
    }
+
+	iframe {
+		margin-left: 1em;
+	}
 }
 
 pre {
@@ -105,5 +113,15 @@ kbd {
 img {
    max-width: 100%; /* 最大幅 */
 	height: auto;
+}
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc { display: block !important; }
+.sp { display: none !important; }
+ 
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 750px) {
+    .pc { display: none !important; }
+    .sp { display: block !important; }
 }
 
